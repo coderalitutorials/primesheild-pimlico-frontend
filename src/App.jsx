@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import Reviews from "./components/reviewsData";
+
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/about-us/" element={<About />} />
+        <Route path="/services/" element={<Services />} />
+        <Route path="/contact-us/" element={<Contact />} />
       </Routes>
-      {/* <Reviews/> */}
+   
       <Footer />
     </>
   );
